@@ -1,5 +1,14 @@
 ﻿body { padding-top: 42px; }
 
+.sharepanel{
+    padding-top:10px;
+    padding-bottom:10px;
+    background:#333;
+    color:#ddd;
+    display:none;
+    border-bottom:1px solid #222;
+}
+
 .navbar{height:42px;min-height:42px;}
 .navbar-brand{
   display: inline-block;
@@ -14,6 +23,9 @@
   margin-left: 50px;
 }
 
+.navbar-nav>li>a{
+    padding-top: 10px;
+    padding-bottom: 10px;}
 
 /*--------------------------------------*/
 .header {
