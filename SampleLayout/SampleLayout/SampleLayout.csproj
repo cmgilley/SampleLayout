@@ -133,6 +133,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\img\Abacus.png" />
     <Content Include="Content\img\Left-Arrow.png" />
     <Content Include="Content\img\logo.png" />
     <Content Include="Content\simplesidebar.css" />
