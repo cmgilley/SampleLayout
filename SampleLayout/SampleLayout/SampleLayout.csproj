@@ -221,6 +221,11 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Shared\_AppMenu.cshtml" />
+    <Content Include="Views\Shared\_TopUserDropDown.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Shared\_TopTodoDropDown.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
