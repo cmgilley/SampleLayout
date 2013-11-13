@@ -7,6 +7,7 @@
    @* @Styles.Render("~/Content/css")*@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <link href="~/Content/simplesidebar.css" rel="stylesheet" />
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -53,13 +54,13 @@
           <!-- Sidebar -->
       <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
-          <li class="sidebar-brand"><a href="#">Start Bootstrap</a></li>
+          <li class="sidebar-brand"><a href="#"><img src="~/Content/img/Left-Arrow.png" /> Back to Home</a></li>
           <li><a href="#"><span class="glyphicon glyphicon-tower"></span>Dashboard</a></li>
-          <li><a href="#">Shortcuts</a></li>
-          <li><a href="#">Overview</a></li>
-          <li><a href="/">Index</a></li>
+          <li><a href="#"><i class="fa fa-cogs fa-fw"></i> Shortcuts</a></li>
+          <li><a href="#"><i class="fa fa-folder-open fa-fw"></i> Folders</a></li>
+          <li><a href="/"><i class="fa fa-cog fa-spin"></i> Working</a></li>
           <li><a href="/Home/About" class="active"><span class="glyphicon glyphicon-star"></span>About</a></li>
-          <li><a href="#">Services</a></li>
+          <li><a href="#"><i class="fa fa-arrow-circle-o-left"></i> Services</a></li>
           <li><a href="#"><span class="glyphicon glyphicon-trash"></span>Contact</a></li>
         </ul>
       </div>
