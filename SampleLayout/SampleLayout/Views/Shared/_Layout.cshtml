@@ -8,12 +8,13 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css">
     <link href="~/Content/simplesidebar.css" rel="stylesheet" />
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
       @Html.Partial("_AppMenu")
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+@*    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -48,13 +49,31 @@
             </ul>
         </div>
         <!-- /.navbar-collapse -->
-    </nav>
+    </nav>*@
 
     <div id="wrapper">
           <!-- Sidebar -->
       <div id="sidebar-wrapper">
+        <div id="header-container">
+            <a href="#" class="win-backbutton"><img src="~/Content/img/Left-Arrow.png" /></a>
+            <h5>Application name</h5>
+            <div class="dropdown">
+                <a class="header-dropdown dropdown-toggle accent-color" data-toggle="dropdown" href="#">
+                  Title of the Page
+                  <b class="caret"></b>
+               </a>
+               <ul class="dropdown-menu">
+                  <li><a href="#">Go to another page</a></li>
+                  <li><a href="#">Go to another page</a></li>
+                  <li><a href="#">Go to another page</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Home</a></li>
+               </ul>
+            </div>
+         </div>
+      
         <ul class="sidebar-nav">
-          <li class="sidebar-brand"><a href="#"><img src="~/Content/img/Left-Arrow.png" /> Back to Home</a></li>
+          @*<li class="sidebar-brand"><a href="#"><img src="~/Content/img/Left-Arrow.png" /> Back to Home</a></li>*@
           <li><a href="#"><span class="glyphicon glyphicon-tower"></span>Dashboard</a></li>
           <li><a href="#"><i class="fa fa-cogs fa-fw"></i> Shortcuts</a></li>
           <li><a href="#"><i class="fa fa-folder-open fa-fw"></i> Folders</a></li>
@@ -68,6 +87,26 @@
               <!-- Page content -->
       <div id="page-content-wrapper">
         <div class="content-header">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="user-container" class="pull-right">
+                        <h5 class="text-right">Michael Gilley <img src="http://www.gravatar.com/avatar/1fc1eee3ee3d6e4c90c35de3900acffc.png?s=22" /></h5>
+                        <div class="dropdown">
+                            <a class="user-dropdown dropdown-toggle accent-color" data-toggle="dropdown" href="#">mgilley@beechercarlso.com
+                          <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Go to another page</a></li>
+                                <li><a href="#">Go to another page</a></li>
+                                <li><a href="#">Go to another page</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Home</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
           <h1>
             <a id="menu-toggle" href="#" class="btn btn-default"><i class="glyphicon glyphicon-resize-horizontal"></i></a>
             Simple Sidebar
