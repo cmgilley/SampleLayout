@@ -199,6 +199,50 @@ background-color: #ffffff !important;
   text-shadow:none !important;
 }
 
+#innerwrapper {
+  padding-left: 250px;
+  transition: all 0.4s ease 0s;
+}
+#inner-sidebar-wrapper {
+  margin-left: -250px;
+  left: 500px;
+  width: 250px;
+  background: #4b8df8;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: all 0.4s ease 0s;
+}
+
+/*----------------3 column layout wrapper -----------*/
+#threecolwrapper {
+  padding-left: 500px;
+  transition: all 0.4s ease 0s;
+}
+#threecolsidebar-wrapper {
+  margin-left: -250px;
+  left: 250px;
+  width: 250px;
+  background: #3b3939;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: all 0.4s ease 0s;
+}
+#secondSidebar-wrapper {
+  margin-left: -250px;
+  left: 500px;
+  width: 250px;
+  background: #4b8df8;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: all 0.4s ease 0s;
+}
+/*----------------END 3 column layout wrapper -----------*/
 #wrapper {
   padding-left: 250px;
   transition: all 0.4s ease 0s;
@@ -296,6 +340,33 @@ background-color: #ffffff !important;
 }
 
 @media (max-width:767px) {
+    #threecolwrapper {
+        padding-left: 0;
+    }
+
+    #threecolsidebar-wrapper {
+        left: 0;
+    }
+    #secondSidebar-wrapper {
+        left:0;
+    }
+
+    #threecolwrapper.active {
+        position: relative;
+        left: 250px;
+    }
+
+        #threecolwrapper.active #threecolsidebar-wrapper {
+            left: 250px;
+            width: 250px;
+            transition: all 0.4s ease 0s;
+        }
+        #threecolwrapper.active #secondSidebar-wrapper {
+            left: 500px;
+            width: 250px;
+            transition: all 0.4s ease 0s;
+        }
+
 
     #wrapper {
         padding-left: 0;

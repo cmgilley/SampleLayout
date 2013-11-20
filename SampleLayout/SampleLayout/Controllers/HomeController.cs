@@ -19,5 +19,9 @@ namespace SampleLayout.Controllers
         {
             return View();
         }
+        public ActionResult ThreeColumn()
+        {
+            return View();
+        }
     }
 }

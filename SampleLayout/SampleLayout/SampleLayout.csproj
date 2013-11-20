@@ -229,6 +229,8 @@
     </Content>
     <Content Include="Views\Shared\_TopTodoDropDown.cshtml" />
     <Content Include="Views\Shared\_SidebarMenu.cshtml" />
+    <Content Include="Views\Shared\_3ColumnLayout.cshtml" />
+    <Content Include="Views\Home\ThreeColumn.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

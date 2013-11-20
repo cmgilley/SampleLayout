@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+   @* @Styles.Render("~/Content/css")*@
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css">
+    <link href="~/Content/simplesidebar.css" rel="stylesheet" />
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+      @Html.Partial("_AppMenu")
+
+
+    <div id="threecolwrapper">
+          <!-- Sidebar -->
+      <div id="threecolsidebar-wrapper">
+          @Html.Partial("_SidebarMenu")
+      </div>
+        <div id="secondSidebar-wrapper">
+            stuff
+        </div>
+
+              <!-- Page content -->
+      <div id="page-content-wrapper">
+            <div class="page-content inset">
+                @RenderBody()
+            </div>
+      </div>
+
+        
+    </div>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+        <!-- Put this into a custom JavaScript file to make things more organized -->
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#threecolwrapper").toggleClass("active");
+
+        });
+    </script>
+@*    	<script>
+    	    jQuery(document).ready(function () {
+    	        $(".open").click(function () {
+    	            $(".sharepanel").slideToggle('1000', "swing");
+    	        });
+
+    	    });
+	</script>*@
+    @RenderSection("scripts", required: false)
+</body>
+</html>
