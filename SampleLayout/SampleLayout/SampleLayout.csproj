@@ -228,6 +228,7 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="Views\Shared\_TopTodoDropDown.cshtml" />
+    <Content Include="Views\Shared\_SidebarMenu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
