@@ -1,4 +1,7 @@
-﻿body { padding-top: 0px; }
+﻿body { 
+    padding-top: 0px; 
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+}
 
 
 /***
@@ -578,7 +581,7 @@ Tiles(new in v1.1.1)
 #user-container{
     display:block;
     vertical-align: top;
-    line-height: 35px;
+    line-height: 15px;
 }
 
 #user-container a.user-dropdown{
@@ -601,7 +604,7 @@ Tiles(new in v1.1.1)
   font-size: 22px;
   margin-bottom:5px;
   color:#666;
-  margin-right:5px;
+  margin-right:15px;
 }
 
 
@@ -626,7 +629,7 @@ Tiles(new in v1.1.1)
 }
 
 #header-container .dropdown.open .dropdown-toggle {
-  color: inherit;
+  color:#fff;
   background: inherit;
 }
 
