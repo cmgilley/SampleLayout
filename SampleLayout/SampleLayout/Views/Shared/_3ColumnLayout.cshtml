@@ -13,16 +13,35 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-      @Html.Partial("_AppMenu")
+     @* @Html.Partial("_AppMenu")*@
 
 
     <div id="threecolwrapper">
           <!-- Sidebar -->
       <div id="threecolsidebar-wrapper">
           @Html.Partial("_SidebarMenu")
+
       </div>
         <div id="secondSidebar-wrapper">
-            stuff
+            <div class="panel panel-success">
+                <!-- Default panel contents -->
+                <div class="panel-heading">Panel heading</div>
+                <div class="panel-body">
+                    <p>Some stuff goes here.</p>
+                </div>
+                  <div class="list-group">
+                  <a href="#" class="list-group-item"><i class="fa fa-envelope fa-fw"></i><span class="badge">2</span>Dapibus ac facilisis in</a>
+                  <a href="#" class="list-group-item"><i class="fa fa-pencil fa-fw"></i>Morbi leo risus</a>
+                  <a href="#" class="list-group-item"><i class="fa fa-book fa-fw"></i><span class="badge">4</span>Porta ac consectetur ac</a>
+                  <a href="#" class="list-group-item"><i class="fa fa-shield fa-fw"></i>Vestibulum at eros</a>
+                  </div>
+            </div>
+                          <div class="list-group">
+              <a href="#" class="list-group-item"><i class="fa fa-envelope fa-fw"></i><span class="badge">2</span>Dapibus ac facilisis in</a>
+              <a href="#" class="list-group-item"><i class="fa fa-pencil fa-fw"></i>Morbi leo risus</a>
+              <a href="#" class="list-group-item"><i class="fa fa-book fa-fw"></i><span class="badge">4</span>Porta ac consectetur ac</a>
+              <a href="#" class="list-group-item"><i class="fa fa-shield fa-fw"></i>Vestibulum at eros</a>
+              </div>
         </div>
 
               <!-- Page content -->
@@ -42,6 +61,7 @@
         <!-- Put this into a custom JavaScript file to make things more organized -->
     <script>
         $("#menu-toggle").click(function (e) {
+            console.log("clicked the thing")
             e.preventDefault();
             $("#threecolwrapper").toggleClass("active");
 
