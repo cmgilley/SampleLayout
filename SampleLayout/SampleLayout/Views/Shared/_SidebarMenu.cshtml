@@ -1,4 +1,5 @@
-﻿        <div id="header-container">
+﻿<div id="mainmenu">      
+  <div id="header-container">
             <a href="#" class="win-backbutton"><img src="~/Content/img/Left-Arrow.png" /></a>
             <h5>Application name</h5>
             <div class="dropdown">
@@ -16,8 +17,7 @@
             </div>
          </div>
       
-        <ul class="sidebar-nav">
-          @*<li class="sidebar-brand"><a href="#"><img src="~/Content/img/Left-Arrow.png" /> Back to Home</a></li>*@
+        @*<ul class="sidebar-nav">
           <li><a href="#"><span class="glyphicon glyphicon-tower"></span>Dashboard</a></li>
           <li><a href="#"><i class="fa fa-cogs fa-fw"></i> Shortcuts</a></li>
           <li><a href="#"><i class="fa fa-folder-open fa-fw"></i> Folders</a></li>
@@ -25,4 +25,57 @@
           <li><a href="/Home/About" class="active"><span class="glyphicon glyphicon-star"></span>About</a></li>
           <li><a href="#"><i class="fa fa-arrow-circle-o-left"></i> Services</a></li>
           <li><a href="/Home/ThreeColumn"><span class="glyphicon glyphicon-trash"></span>3 Column</a></li>
-        </ul>
+        </ul>*@
+
+              <div class="list-group">
+              <a href="/Home/About" class="list-group-item"><i class="fa fa-envelope fa-fw"></i><span class="badge">2</span>About</a>
+              <a href="#" class="list-group-item"><i class="fa fa-pencil fa-fw"></i>Morbi leo risus</a>
+              <a href="/" class="list-group-item active"><i class="fa fa-book fa-fw"></i><span class="badge">4</span>Home Screen</a>
+              <a href="/Home/ThreeColumn" class="list-group-item"><i class="fa fa-shield fa-fw"></i>Three Column Layout</a>
+              </div>
+
+
+@*<div class="list-group">
+        <a href="#" class="list-group-item active">
+          <h4 class="list-group-item-heading">List group item heading</h4>
+          <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+        </a>
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">List group item heading</h4>
+          <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+        </a>
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">List group item heading</h4>
+          <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+        </a>
+      </div>*@
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+                         <div class="btn-group btn-group-justified">
+              <a href="#" class="btn btn-default"><i class="fa fa-plus"></i></a>
+              <a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
+              <a href="#" class="btn btn-default"><i class="fa fa-user"></i></a>
+
+            </div>
+        </div>
+        <div class="panel-body">
+            Panel content
+
+        </div>
+        <div class="panel-footer">
+            <div class="btn-group btn-group-justified">
+              <a href="#" class="btn btn-default">Left</a>
+              <a href="#" class="btn btn-default">Middle</a>
+              <a href="#" class="btn btn-default">Right</a>
+            </div>
+        </div>
+    </div>
+             <div class="btn-group btn-group-justified">
+              <a href="#" class="btn btn-default"><i class="fa fa-plus"></i></a>
+              <a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
+              <a href="#" class="btn btn-default"><i class="fa fa-user"></i></a>
+             <a href="'#" class="btn btn-default"><i class="fa fa-check-square-o"></i> <span class="badge">4</span></a>
+
+            </div>
+</div>

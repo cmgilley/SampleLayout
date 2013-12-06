@@ -684,6 +684,7 @@ Tiles(new in v1.1.1)
   display:block;
   margin-left: 50px;
   vertical-align: top;
+  margin-bottom:25px;
 }
 
 
@@ -769,5 +770,38 @@ border-top-left-radius: 0px;
 .panel {
 margin-bottom: 20px;
 background-color: #fff;
+border-radius: 0px;
+}
+
+#mainmenu a.list-group-item {
+color: #fff;
+}
+
+#mainmenu .list-group-item {
+position: relative;
+display: block;
+padding: 10px 15px;
+margin-bottom: -1px;
+background-color: #3b3939;
+border: 1px solid #3b3939;
+}
+
+#mainmenu a.list-group-item:hover, a.list-group-item:focus {
+text-decoration: none;
+background-color: #8cc63e;
+}
+
+.fa-fw {
+width: 1.75em;
+text-align: center;
+}
+
+#mainmenu .panel-heading {
+padding: 5px 0px;
+border-bottom: 1px solid transparent;
+border-top-right-radius: 0px;
+border-top-left-radius: 0px;
+}
+#mainmenu .btn {
 border-radius: 0px;
 }
