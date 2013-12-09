@@ -23,5 +23,17 @@ namespace SampleLayout.Controllers
         {
             return View();
         }
+        public ActionResult TableView()
+        {
+            return View();
+        }
+        public ActionResult FuelUXTable()
+        {
+            return View();
+        }
+        public ActionResult GroupList()
+        {
+            return View();
+        }
     }
 }

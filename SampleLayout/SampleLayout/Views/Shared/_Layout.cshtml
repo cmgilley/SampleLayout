@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css">
     <link href="~/Content/simplesidebar.css" rel="stylesheet" />
+    @*<link href="~/Content/DataTables-1.9.4/media/css/jquery.dataTables.css" rel="stylesheet" />*@
+    <link href="~/Content/DataTableBootstrap.css" rel="stylesheet" />
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
@@ -103,9 +105,11 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
         <!-- Put this into a custom JavaScript file to make things more organized -->
+    <script src="~/Scripts/DataTables-1.9.4/media/js/jquery.dataTables.min.js"></script>
+    <script src="~/Scripts/DataTableBootstrap.js"></script>
     <script>
         $("#menu-toggle").click(function (e) {
-            console.log("clicked the thing")
+            //console.log("clicked the thing")
             e.preventDefault();
             $("#wrapper").toggleClass("active");
 

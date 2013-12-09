@@ -331,9 +331,13 @@ background-color: #ffffff !important;
   display: inline-block;
 }
 
-#menu-toggle {
+/*#menu-toggle {
   display: none;
+}*/
+#phoneMenu {
+    display: none;
 }
+
 
 .inset {
   padding: 20px;
@@ -387,7 +391,11 @@ background-color: #ffffff !important;
             transition: all 0.4s ease 0s;
         }
 
-    #menu-toggle {
+    /*#menu-toggle {
+        display: inline-block;
+    }*/
+    #phoneMenu {
+
         display: inline-block;
     }
 
